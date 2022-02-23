@@ -5,6 +5,7 @@ AllCops:
   Exclude:
     - bin/*
     - exe/*
+    - vendor/*
 
 Style/StringLiterals:
   Enabled: true
