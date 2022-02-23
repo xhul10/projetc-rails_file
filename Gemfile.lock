@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     rails_file (0.0.1)
+      tty-option
+      zeitwerk
 
 GEM
   remote: https://rubygems.org/
@@ -27,7 +29,9 @@ GEM
     rubocop-ast (1.15.1)
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
+    tty-option (0.2.0)
     unicode-display_width (2.1.0)
+    zeitwerk (2.5.4)
 
 PLATFORMS
   arm64-darwin-21

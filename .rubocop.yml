@@ -1,13 +1,43 @@
 AllCops:
-  TargetRubyVersion: 2.4
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  Exclude:
+    - bin/*
+    - exe/*
 
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Style/ClassAndModuleChildren:
+  Enabled: false
 
-Layout/LineLength:
-  Max: 120
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/MixinGrouping:
+  Enabled: false
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: space
+
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: required
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false

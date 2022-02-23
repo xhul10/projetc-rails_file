@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
-require_relative "rails_file/version"
+require "zeitwerk"
+loader = Zeitwerk::Loader.for_gem
+loader.inflector.inflect(
+  "cli" => "CLI"
+)
+loader.setup
 
 module RailsFile
   class Error < StandardError; end
-  # Your code goes here...
 end

@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+lib_path = File.expand_path("../lib", __dir__)
+$:.unshift(lib_path) if !$:.include?(lib_path)
+
+require "rails_file"
+
+RailsFile::CLI.start(ARGV)
