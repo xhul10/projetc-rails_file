@@ -5,8 +5,8 @@ require_relative "lib/rails_file/version"
 Gem::Specification.new do |spec|
   spec.name          = "rails_file"
   spec.version       = RailsFile::VERSION
-  spec.authors       = ["Lewis Buckley"]
-  spec.email         = ["lewis@hey.com"]
+  spec.authors       = [ "Lewis Buckley" ]
+  spec.email         = [ "lewis@hey.com" ]
 
   spec.summary       = "Rails File is a one-file Rails app generator."
   spec.homepage      = "https://www.github.com/lewispb/rails_file"
@@ -29,6 +29,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = [ "lib" ]
 
-  spec.add_dependency "zeitwerk"
   spec.add_dependency "tty-option"
+  spec.add_dependency "zeitwerk"
+  spec.add_development_dependency "rubocop"
+  spec.metadata["rubygems_mfa_required"] = "true"
 end
